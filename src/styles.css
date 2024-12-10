@@ -1,0 +1,784 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Align the logo vertically */
+  }
+  
+  .logo-img {
+    width: 200px; /* Adjust the size of the logo as needed */
+    height: auto;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #090909;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #8dd7fc;
+    color: #000000;
+  }
+  
+  .cta .call-button {
+    text-decoration: none;
+    background-color: #4dc2f8;
+    color: #070707;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta .call-button:hover {
+    background-color: #9bd9f9;
+    color: #000000;
+  }
+
+
+.cta {
+  margin-left: 20px;
+}
+
+.call-button {
+  padding: 12px 20px;
+  background-color: #4dc2f8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #9bd9f9;
+}
+
+.auth-btn-container {
+  margin-left: 20px;
+}
+
+.cta-button {
+  padding: 12px 20px;
+  background-color: #4dc2f8; /* Same as the CTA button color */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #9bd9f9; /* Lighter shade on hover */
+}
+
+.cta-button:focus {
+  outline: none;
+}
+
+  
+  /* Header Styling with Glassmorphism */
+  .header {
+    background-image: url('assets/header3img.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding-left: 3%; /* Add some left padding to push the content to the left */
+  }
+  
+  .header-content {
+    position: relative;
+    max-width: 800px; /* You can adjust this to be smaller if needed */
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px;
+    backdrop-filter: blur(15px); /* Apply blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-left: 5%; /* Align content slightly to the left */
+  }
+  
+  .quote {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #040404;
+  }
+  
+  /* Trip Buttons */
+  .trip-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .trip-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .trip-button.active {
+    background-color: #4dcaf8;
+    color: #0c0c0c;
+  }
+  
+  .trip-button:not(.active) {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  
+  .trip-button:hover {
+    background-color: #9cdbfb;
+    color: #000000;
+  }
+  
+  /* Form Styling */
+  .trip-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    background-color: #4dc5f8;
+    color: #f6f8f9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #9cd8fb;
+    color: #000000;
+  }
+
+  /* Styling for journey type dropdown */
+select {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  color: #333;
+}
+
+select:focus {
+  border-color: #56f84d;
+  outline: none;
+}
+
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+.success-popup button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.success-popup button:hover {
+  background-color: #ff1a1a;
+}
+
+.success-popup p {
+  margin: 0;
+  font-size: 16px;
+}
+
+  
+  /* Styling for the Vehicle Type Dropdown */
+  #vehicle {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.932); /* Transparent background for the glass effect */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    color: #000;
+  }
+  
+  
+  /* Section container */
+  .why-ride {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .why-ride h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .why-ride p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Features container */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual feature card */
+  .feature {
+    width: 23%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  
+  .carousel-section {
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .carousel-heading {
+    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4dc2f8; /* Brand color for better emphasis */
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .car-details {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .car-details h3 {
+    color: #4dc2f8;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background: #4dc2f8;
+  }
+  
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #f6f9fa; /* Light background to match your overall design */
+  }
+  
+  .feature {
+    width: 18%; /* Reduced width to make them smaller */
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    padding: 15px; /* Reduced padding for a smaller look */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px); /* Hover effect to make feature cards pop */
+  }
+  
+  .feature .icon {
+    font-size: 2.5rem; /* Smaller icon size */
+    color: #4dc2f8; /* Match the brand color */
+    margin-bottom: 10px; /* Reduced margin */
+  }
+  
+  .feature h3 {
+    font-size: 1.2rem; /* Reduced font size */
+    margin-bottom: 8px; /* Reduced margin */
+    color: #333;
+  }
+  
+  .feature p {
+    font-size: 0.9rem; /* Smaller text for description */
+    color: #666;
+  }
+  
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #333;
+    color: #f6f8f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-info,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-info h4,
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-info p,
+  .footer-contact p {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li,
+  .footer-social ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    text-decoration: none;
+    color: #f6f8f9;
+    font-size: 1rem;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+    color: #4dc2f8; /* Brand color on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-info,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  .fare-table {
+    width: 50%; /* Adjust table width */
+    margin: 20px auto; /* Center table */
+    border-collapse: collapse;
+  }
+  
+  .fare-table th, .fare-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd; /* Light border color */
+  }
+  
+  .fare-table th {
+    background-color: #4dc2f8; /* Header background color */
+    color: white;
+  }
+  
+  .fare-table td {
+    background-color: #f9f9f9; /* Table row background color */
+  }
+  
+  .fare-table tr:hover {
+    background-color: #e1f4fc; /* Highlight row on hover */
+  }
+  
+  
+  /* CSS for Contact Form */
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  
+  
+  /* Contact Section Styles */
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+  }
+  
+  .contact-form {
+    width: 48%; /* Left side for the form */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #4dc2f8;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #9bd9f9;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .contact-image {
+    width: 48%; /* Right side for the image */
+    height: 100%; /* Adjust to fit form height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    object-fit: cover; /* Makes sure image covers the area without distortion */
+    max-height: 550px; /* Set a max height for the image */
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+  
+  /* Contact Info Styles */
+  .contact-info {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media screen and (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-form, .contact-image {
+      width: 90%; /* Adjust width on smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .contact-info {
+      padding: 20px;
+    }
+  }
+  
+  
+  
+  /* General Styles for the FAQ Section */
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faq-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .faq-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .faq-question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .faq-answer {
+    display: none; /* Initially hide the answer */
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block; /* Show answer when the item is active */
+  }
+
+  .faq-answer {
+    display: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4dc2f8;
+    border-radius: 5px;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4dc2f8;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .faq-question:hover {
+    background-color: #3aa9e6;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  
